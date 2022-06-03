@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.portfolio{
+  position: absolute;
+  top:50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.Header{
+  background-color: #282c34;
+  height:3rem;
+  font-size: 2rem;
+  color:white;
+}
+
+.connection-ac{
+  color: white;
+  float: right;
+  margin-right: 10px;
+  background-color: green;
+  border-radius: 1.5rem;
+  padding: 2px 2px;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.searchBox{
+  display: flex;
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  margin-top: 30px;
+}
+
+.inputBox{
+  width: 14rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    border: 2px solid;
+    border-radius: 20px;
+}
+.btnSubmitISIN{
+
+  border-radius: 2px solid blue;
+  border-radius: 23px;
+  box-shadow: 0px 0px 4px 1px rgb(13 16 20);
+  min-width: 75px;
+  min-width: 90px;
+  min-height: 38px;
+
+}
+
+.btnSubmitISIN:hover {
+  background-color:#002ead;
+  transition: 0.7s;
+}
+.connection-iac{
+ 
+  color: white;
+  float: right;
+  margin-right: 10px;
+  background-color: red;
+  border-radius: 1.5rem;
+  padding: 2px 2px;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.errorMsg{
+  color: red;
+  height: 2rem;
+  font-size: 20px;
+  font-size:20px;
+}
+
+.btnClose{
+  color: grey;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.btnClose:hover{
+  color:blue;
+  
+}
