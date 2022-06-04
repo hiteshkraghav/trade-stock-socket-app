@@ -1,28 +1,15 @@
-/* .App {
-  text-align: center;
-} */
-
-/* .portfolio{
-  position: absolute;
-  top:50%;
-} */
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-.Header{
+.Header {
   background-color: #282c34;
-  height:3rem;
+  height: 3rem;
   font-size: 2rem;
-  color:white;
+  color: white;
   padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.connection-ac{
+.connection-ac {
   color: white;
   float: right;
   margin-right: 10px;
@@ -35,35 +22,26 @@
   font-size: 16px;
 }
 
-/* .searchBox{
-  display: flex;
-  position: absolute;
-  top: 15%;
-  left: 2%;
-  margin-top: 30px;
-} */
-
-.searchBox{
+.searchBox {
   text-align: right;
   padding: 10px;
 }
-.inputBox{
+.inputBox {
   /* width: 14rem; */
-    height: 2rem;
-    font-size: 1rem;
-    text-align: center;
-    margin-right: 1rem;
-    border: 2px solid #ff7900;
-    border-radius: 20px;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 1rem;
+  border: 2px solid #ff7900;
+  border-radius: 20px;
 }
-.noData{
+.noData {
   font-size: 1rem;
   color: orange;
   text-align: center;
   padding: 40px;
 }
-.btnSubmitISIN{
-
+.btnSubmitISIN {
   border: 2px solid #ff7900;
   border-radius: 23px;
   padding: 0 20px;
@@ -74,17 +52,14 @@
   /* min-width: 90px; */
   min-height: 38px;
   cursor: pointer;
-
 }
 
-
 .btnSubmitISIN:hover {
-  background-color:#ff7900;
+  background-color: #ff7900;
   transition: 0.1s;
   color: #fff;
 }
-.connection-iac{
- 
+.connection-iac {
   color: white;
   float: right;
   margin-right: 10px;
@@ -107,89 +82,34 @@
   color: white;
 }
 
-
-.body{
-  margin:0px;
-  padding:0px;
+.body {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-.errorMsg{
+.errorMsg {
   color: red;
   height: 2rem;
   font-size: 20px;
   text-align: center;
 }
 
-.btnClose{
+.btnClose {
   color: black;
   padding-left: 3px;
   cursor: pointer;
-  font-size:12px;
+  font-size: 12px;
 }
 
-.btnClose:hover{
-  color:#ff7900;
-  
+.btnClose:hover {
+  color: #ff7900;
 }
-.connection-status{
+.connection-status {
   padding: 5px 10px;
   /* height: 15px;
   width: 15px; */
-  
 }
-/* 
-.stock-head, .stock-info-container{
-  display: flex;
-    align-items: center;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 12px;
-}
-
-.stock-head span {
-  display: inline-block;
-
-  padding: 10px 10px 10px 5px;
-  
-}
-
-.stock-info{
-  
-  padding: 10px 10px 10px 5px;
-  display: inline-block;
-  
-}
-
-.btn-danger{
-  border: 1px solid red;
-  background: transparent;
-  border-radius: 20px;
-}
-.stock-isin{
-  padding: 10px 10px 10px 5px;
-}
-
-@media screen and (min-width: 900px) {
-  .stock-info-container,.stock-head{
-    font-size: 14px;
-  }
-}
-
-.portfolio {
-  border: 1px solid #dfdfdf;
-  margin: 20px 0;
-  border-radius: 5px;
-  padding: 10px 0;
-} */
-
-/* .card-divider{
-  margin: 0;
-  background: #dfdfdf;
-  width: 100%;
-  height: 1px;
-} */
 
 table {
   border: 1px solid #ccc;
@@ -202,24 +122,24 @@ table {
 
 table caption {
   font-size: 1.5em;
-  margin: .5em 0 .75em;
+  margin: 0.5em 0 0.75em;
 }
 
 table tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
-  padding: .35em;
+  padding: 0.35em;
 }
 
 table th,
 table td {
-  padding: .625em;
+  padding: 0.625em;
   text-align: center;
 }
 
 table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -231,7 +151,7 @@ table th {
   table caption {
     font-size: 1.3em;
   }
-  
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -242,20 +162,20 @@ table th {
     position: absolute;
     width: 1px;
   }
-  
+
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
-    margin-bottom: .625em;
+    margin-bottom: 0.625em;
   }
-  
+
   table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: right;
   }
-  
+
   table td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
@@ -266,36 +186,24 @@ table th {
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   table td:last-child {
     border-bottom: 0;
   }
 }
-.btn-danger{
+.btn-danger {
   color: red;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.stock-isin {
+  text-transform: uppercase;
+}
 
 /* general styling */
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-}
-.stock-isin{
-  text-transform: uppercase;
 }
