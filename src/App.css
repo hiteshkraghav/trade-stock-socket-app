@@ -56,6 +56,12 @@
     border: 2px solid #ff7900;
     border-radius: 20px;
 }
+.noData{
+  font-size: 1rem;
+  color: orange;
+  text-align: center;
+  padding: 40px;
+}
 .btnSubmitISIN{
 
   border: 2px solid #ff7900;
@@ -112,13 +118,14 @@
   color: red;
   height: 2rem;
   font-size: 20px;
-  font-size:20px;
+  text-align: center;
 }
 
 .btnClose{
-  color: grey;
+  color: black;
   padding-left: 3px;
   cursor: pointer;
+  font-size:12px;
 }
 
 .btnClose:hover{

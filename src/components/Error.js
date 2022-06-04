@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Error({ message, closeMsg }) {
   return (
-    <div className="errorMsg">{message}<span className={'btnClose'} onClick={() => closeMsg('')}> <u>clear</u></span></div>
-  )
+    <div data-label="error-msg" className="errorMsg">
+      {message}
+      <span className={"btnClose"} onClick={() => closeMsg("")}>
+        clear
+      </span>
+    </div>
+  );
 }
 
-export default Error
+export default Error;
