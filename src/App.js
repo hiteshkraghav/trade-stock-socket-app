@@ -11,7 +11,7 @@ function App() {
   const [ISIN, setISIN] = useState("");
   const [errorMessage, setError] = useState("");
   const [portfolio,setPortfolioName]=useState('default');
-  console.log("portfolio",portfolio.length);
+  // console.log("portfolio",portfolio.length);
   // const [selectedInstrument,setSelectedInstrument] = useState({});
   const connection= React.useRef(null);
   const [instruments,setInstruments] = useState({});
@@ -105,6 +105,9 @@ const  createPortfolioList=()=>{
       {errorMessage.length > 0 && (
         <Error message={errorMessage} closeMsg={setError} />
       )}
+      {/* <select value={portfolio} onChange={getValue} >
+       {createPortfolioList()}
+      </select> */}
       <InputSearch
         inputVal={ISIN}
         setInputVal={setISIN}
@@ -112,9 +115,7 @@ const  createPortfolioList=()=>{
         
       />
       <PortfolioData selectedStock={setSelectedInstrument} stocks={instruments}/>
-      <select value={portfolio} onChange={getValue}>
-       {createPortfolioList()}
-      </select>
+      
     </div>
   );
 }

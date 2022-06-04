@@ -17,7 +17,7 @@ function InputSearch(props) {
         maxLength="12"
         placeholder="Enter ISIN to see instrument"
       />
-      <button className="btnSubmitISIN" onClick={validate}>Add ISIN</button>
+      <button className="btnSubmitISIN" onClick={validate}>ADD ISIN</button>
     </div>
   );
 }
