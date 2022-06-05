@@ -1,5 +1,8 @@
 import React from "react";
 import TimeAgo from "react-timeago";
+
+// Rows displaying the individual details about ISIN
+
 const StockRow = ({ stock, selectedStock, count }) => {
   const selectedStockDetail = (stock, e) => {
     selectedStock(stock, e);
@@ -40,4 +43,4 @@ const StockRow = ({ stock, selectedStock, count }) => {
   );
 };
 
-export default StockRow;
+export default React.memo(StockRow);

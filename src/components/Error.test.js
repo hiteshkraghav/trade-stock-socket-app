@@ -11,7 +11,7 @@ describe('renders Error component', () => {
 
 it('Should return error message',()=>{
     const element = errorInstance.find('div');
-    expect(element.text()).toBe('Explainable error message clear');
+    expect(element.text()).toBe('Explainable error message close');
   
 })
 

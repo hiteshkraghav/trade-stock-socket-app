@@ -16,8 +16,4 @@ describe("renders App component", () => {
     expect(element).toBeTruthy();
   });
 
-    //   it("Should find stock row first button", () => {
-    //     const btnElement = headerInstance.find("StockRow");
-    //     expect(btnElement.at(1).prop("count")).toEqual(1);
-    // })
 });

@@ -1,6 +1,8 @@
 import React from "react";
 import { Detector } from "react-detect-offline";
 import "../App.css";
+
+// Detects and highlights whether the system is online or offline.
 function Header({ online }) {
   return (
     <div data-label="portfolio-header" className="Header">

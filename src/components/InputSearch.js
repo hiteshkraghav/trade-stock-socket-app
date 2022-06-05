@@ -1,9 +1,9 @@
 import React from "react";
 
+// Takes ISIN as an input and stores in the app component.
 function InputSearch(props) {
-  
   const { inputVal, setInputVal, validate } = props;
-  
+
   const setISINValue = (e) => {
     setInputVal(e.target.value);
   };
@@ -20,7 +20,11 @@ function InputSearch(props) {
         maxLength="12"
         placeholder="Enter ISIN"
       />
-      <button data-label="isin-enter-button" className="btnSubmitISIN" onClick={validate}>
+      <button
+        data-label="isin-enter-button"
+        className="btnSubmitISIN"
+        onClick={validate}
+      >
         ADD ISIN
       </button>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 
+// Banner to be display if watch list is empty.
 function NoData({ count }) {
   console.log("duh");
   return count > 0 ? (

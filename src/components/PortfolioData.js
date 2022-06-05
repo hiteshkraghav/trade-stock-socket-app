@@ -1,5 +1,7 @@
 import React from "react";
 import StockRow from "./Stockrow";
+
+// Table to show the ISIN Information 
 function PortfolioData({ stocks, selectedStock }) {
   return (
     <table data-label="table-display-stocks" className="portfolio">
