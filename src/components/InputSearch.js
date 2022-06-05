@@ -1,6 +1,7 @@
 import React from "react";
 
 function InputSearch(props) {
+  
   const { inputVal, setInputVal, validate } = props;
   
   const setISINValue = (e) => {

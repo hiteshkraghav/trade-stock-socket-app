@@ -44,6 +44,8 @@ function App() {
       wsCurrent.close();
     };
   }, []);
+
+
   const valiDateAndSubmitISIN = () => {
     const isValidISIN = ISIN_REGEX.test(ISIN);
     if (isValidISIN) {
