@@ -1,25 +1,33 @@
-import React from 'react'
-import StockRow from './Stockrow'
-function PortfolioData({stocks,selectedStock}) {
+import React from "react";
+import StockRow from "./Stockrow";
 
-  const setSelectedStock=(stock)=>{
-    selectedStock(stock);
-  }
+// Table to show the ISIN Information 
+function PortfolioData({ stocks, selectedStock }) {
   return (
-    <div className="portfolio"> 
-    <table  style={{position:'absolute',top:'30%',border: "1px solid red",justifyContent: 'center',alignItems: 'center'}}>
-    <tr>
-      <th>isin</th>
-      <th>price</th>
-      <th>bid</th>
-      <th>ask</th>
-      <th>Updated</th>
-    </tr>
-    {Object.values(stocks).map((stock) => {
-          return <StockRow key={stock.isin} stock={stock} selectedStock={selectedStock}/>; 
-    })}
-  </table></div>
-  )
+    <table data-label="table-display-stocks" className="portfolio">
+      <thead className="stock-head">
+        <th>No</th>
+        <th className="stock-isin">isin</th>
+        <th>price</th>
+        <th>bid</th>
+        <th>ask</th>
+        <th className="stock-time">Updated</th>
+        <th> </th>
+      </thead>
+      <tbody>
+        {Object.values(stocks).map((stock, index) => {
+          return (
+            <StockRow
+              count={index}
+              key={stock.isin}
+              stock={stock}
+              selectedStock={selectedStock}
+            />
+          );
+        })}
+      </tbody>
+    </table>
+  );
 }
 
-export default PortfolioData
+export default PortfolioData;

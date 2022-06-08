@@ -1,18 +1,27 @@
-import React from 'react'
+import React from "react";
 import { Detector } from "react-detect-offline";
-import '../App.css';
-function Header({online}) {
+import "../App.css";
+
+// Detects and highlights whether the system is online or offline.
+function Header({ online }) {
   return (
-    <div className="Header">Portfolio
-    <Detector
-            render={({ online }) => (
-              <span className={online ?'connection-ac':'connection-iac'}>
-                {online ? "Online" : "Offline"}
-              </span>
-            )}
-          />
-   </div>
-  )
+    <div data-label="portfolio-header" className="Header">
+      <div>
+        Portfolio
+        <Detector
+          render={({ online }) => (
+            <span
+              className={`${
+                online ? "connection-ac" : "connection-iac"
+              } connection-status`}
+            >
+              {online ? "Online" : "Offline"}
+            </span>
+          )}
+        />
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

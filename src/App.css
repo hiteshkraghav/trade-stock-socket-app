@@ -1,24 +1,24 @@
-.App {
-  text-align: center;
+/* css for portfolio app */
+
+
+/* general styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
 }
 
-.portfolio{
-  position: absolute;
-  top:50%;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.Header{
+.Header {
   background-color: #282c34;
-  height:3rem;
+  height: 3rem;
   font-size: 2rem;
-  color:white;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.connection-ac{
+.connection-ac {
   color: white;
   float: right;
   margin-right: 10px;
@@ -31,40 +31,48 @@
   font-size: 16px;
 }
 
-.searchBox{
-  display: flex;
-  position: absolute;
-  top: 15%;
-  left: 2%;
-  margin-top: 30px;
+.searchBox {
+  text-align: right;
+  padding: 10px;
 }
 
-.inputBox{
-  width: 14rem;
-    height: 2rem;
-    font-size: 1rem;
-    text-align: center;
-    margin-right: 1rem;
-    border: 2px solid;
-    border-radius: 20px;
+.inputBox {
+  /* width: 14rem; */
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 1rem;
+  border: 2px solid #ff7900;
+  border-radius: 20px;
 }
-.btnSubmitISIN{
 
-  border-radius: 2px solid blue;
+.noData {
+  font-size: 1rem;
+  color: orange;
+  text-align: center;
+  padding: 40px;
+}
+
+.btnSubmitISIN {
+  border: 2px solid #ff7900;
   border-radius: 23px;
-  box-shadow: 0px 0px 4px 1px rgb(13 16 20);
-  min-width: 75px;
-  min-width: 90px;
+  padding: 0 20px;
+  background: #fff;
+  color: #ff7900;
+  /* box-shadow: 0px 0px 4px 1px rgb(13 16 20); */
+  /* min-width: 75px; */
+  /* min-width: 90px; */
   min-height: 38px;
-
+  cursor: pointer;
 }
 
 .btnSubmitISIN:hover {
-  background-color:#002ead;
-  transition: 0.7s;
+  background-color: #ff7900;
+  transition: 0.1s;
+  color: #fff;
 }
-.connection-iac{
- 
+
+.connection-iac {
   color: white;
   float: right;
   margin-right: 10px;
@@ -76,6 +84,7 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -87,27 +96,121 @@
   color: white;
 }
 
-
-.body{
-  margin:0px;
-  padding:0px;
+.body {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-.errorMsg{
+.errorMsg {
   color: red;
   height: 2rem;
   font-size: 20px;
-  font-size:20px;
+  text-align: center;
 }
 
-.btnClose{
-  color: grey;
+.btnClose {
+  color: black;
   padding-left: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btnClose:hover {
+  color: #ff7900;
+}
+.connection-status {
+  padding: 5px 10px;
+  /* height: 15px;
+  width: 15px; */
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.btn-danger {
+  color: red;
+  background: transparent;
+  border-color: transparent;
   cursor: pointer;
 }
 
-.btnClose:hover{
-  color:blue;
-  
+.stock-isin {
+  text-transform: uppercase;
 }
+
+

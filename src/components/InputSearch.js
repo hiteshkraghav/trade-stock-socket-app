@@ -1,23 +1,32 @@
 import React from "react";
 
+// Takes ISIN as an input and stores in the app component.
 function InputSearch(props) {
- const { inputVal, setInputVal, validate }=props;
+  const { inputVal, setInputVal, validate } = props;
+
   const setISINValue = (e) => {
     setInputVal(e.target.value);
   };
 
   return (
-    <div className="searchBox">
-      <input className="inputBox"
-      aria-label="isin-add-field"
+    <div data-label="input-box" className="searchBox">
+      <input
+        className="inputBox"
+        aria-label="isin-add-field"
         type="text"
         name="addISIN"
         value={inputVal}
         onChange={setISINValue}
         maxLength="12"
-        placeholder="Enter ISIN to see instrument"
+        placeholder="Enter ISIN"
       />
-      <button className="btnSubmitISIN" onClick={validate}>Add ISIN</button>
+      <button
+        data-label="isin-enter-button"
+        className="btnSubmitISIN"
+        onClick={validate}
+      >
+        ADD ISIN
+      </button>
     </div>
   );
 }
